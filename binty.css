@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+	text-decoration: none;
+}
+body{
+    background: linear-gradient(315deg, #ffff 0%, #d7e1ec 74%);
+
+}
+
+.hero{
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    display: flex;
+}
+
+.hero h2{
+    font-size: 30px;
+    border-radius: 50%;
+    color: crimson;
+    border: solid 2px crimson;
+    padding: 10px 15px;
+    background-color: #191919;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+ ul li  {
+    list-style-type: none;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    
+}
+ul li:hover{
+    
+    transform: scale(1.2);
+}
+
+ ul li a{
+    color: orange;
+    font-size: 20px;
+	font-weight: bold;
+    border: 2px solid crimson;
+    background: rgba(0,0,0,0.8);
+    border-radius: 18px;
+    padding: 10px ;
+    font-family: magneto;
+
+}
+
+ul li a:hover{
+	color: crimson;
+	transition: 0s;
+    text-decoration: none;
+}
+
+.content{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+}
+.content h2 span{
+	transition: 0.5s;
+}
+
+.content h2:hover span:nth-child(1) {
+	margin-right: 10px;
+
+} 
+
+.content h2:hover span:nth-child(1):after {
+	content: "'";
+
+} 
+
+.content h2:hover span:nth-child(2) {
+	margin-left: 30px;
+
+} 
+
+.content h2{
+    padding: 30px;
+    color: crimson;
+}
+.content img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid crimson;
+}
+.content img:hover{
+    transform: translateY(-10px);
+}
+.contacts {
+    padding: 30px;
+    padding: 50px;
+    height: 300px;
+    width: 100%;
+    background: crimson;
+} 
+.whatsapp_float a i{
+   font-size: 100px;
+    color: limegreen; 
+}
+.whatsapp_float a i:hover{
+    transform: scale(1.3);
+	text-shadow: 0 0 10px lime,
+    0 0 20px lime,
+    0 0 40px lime,
+    0 0 80px lime,
+    0 0 120px lime;
+}.whatsapp_float{
+    position: relative;
+}
+
+
+.events {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 500px;
+
+}
+.events h2 {
+    color: crimson;
+    font-weight: bold;
+}
+.events a img{
+    height: 400px;
+    width: 350px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    
+}
+.events a img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+
+}
+
+.service {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    background-color: #191919;
+
+}
+.service h2{
+    text-align: center;
+    font-size: 50px;
+    border: 2px;
+    color: crimson;
+    border-radius: 50px;
+}
+.collapsible{
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background-color: crimson;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .8);
+    color: orange;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 30px;
+}
+
+.collapsible label:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: orange;
+    
+}
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    top: -100%;
+    opacity: 0.5;
+}
+.collapsible input:checked ~ .collapsible-text{
+    padding-bottom: 25px;
+    max-height: 300px;
+    opacity: 1;
+    top: 0;
+    background: #191919;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .8);
+   
+
+}
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    font-size: 35px;
+
+}
+.collapsible-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.collapsible-text ul li {
+    color: orange;
+    display: inline-block;
+}
+
+.row{
+    padding: 30px;
+    display: flex;
+    
+    align-items: center;
+    background: crimson;
+}
+.col{
+    flex-basis: 50%;
+}
+.col h1 {
+    font-size: 100px;
+
+}
+.col a {
+    width: 180px;
+    color: crimson;
+    padding: 8px 30px;
+    background: #191919;
+    border-radius: 20px;
+    outline: none;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.col a:hover {
+    text-decoration: none;
+    transform: scaleX(1.3);
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    position: relative;
+
+}
+.card p
+{
+    color: crimson;
+    font-weight: bold;
+}
+.card1 {
+    
+    background-image: url(HD\ pic/cassava.jpg);
+}
+
+.card2 {
+    background-image: url(HD\ pic/tuna.jpg);
+}
+.card3 {
+    background-image: url(hd\ pic/jerk.jpg);
+}
+.card4 {
+    background-image: url(hd\ pic/pineapple.jpg);
+}
+.hire{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+.hire h2{
+    background: crimson;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: solid 2px crimson;
+}
+
+.hire h2 a{
+    text-decoration: none;
+    color: #191919;
+}
+.hire h2:hover{
+    transform: scale(1.3);
+  
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    height: 300px;
+    width: 100%;
+    background: #191919;
+}
+ footer h2{
+    color: #fff;
+
+ }
+ footer p{
+    color: #fff;
+ }
+ footer .whatsapp_float a i{
+    color: limegreen;
+    font-size: 40px;
+
+ }
+ footer i{
+    color: crimson;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 12px 20px;
+ }
+ footer i:hover{
+    transform: scale(1.3);
+    text-decoration: none;
+ }
+ footer p i {
+    color: white;
+    font-size: 15px;
+    padding: 0;
+ }
+
+
+ @media (max-width: 480px) {
+    .hero h2{
+        font-size: 21px;
+        
+    }
+    
+ .hero ul li a{
+    font-size: 15px;
+ }
+
+ .content h2{
+    font-size: 25px;
+ }
+    .content img {
+        height: 90px;
+        width: 90px;
+    
+    }
+   
+    .contacts h3 {
+        font-size: 26px;
+    }
+    .events a img{
+        height: 350px;
+        width: 270px;
+
+    }
+.col h1 {
+    font-size: 90px;
+}
+.card{
+    width: 200px;
+    height: 150px;
+    font-size: 22px;
+}
+.card1{
+    font-size: 22px;
+}
+.col a{
+    font-size: 25px;
+}
+
+ul li a{
+    color: orange;
+    font-size: 13px;
+ }
+ 
+.whatsapp_float a i{
+    font-size: 70px;
+}
+
+}
